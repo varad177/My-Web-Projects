@@ -1,0 +1,253 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Codespaces
+Marketplace
+Explore
+ 
+@varad177 
+varad177
+/
+my_web_projects
+Public
+Cannot fork because you own this repository and are not a member of any organizations.
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+my_web_projects/web projects/time-table/index.html
+@varad177
+varad177 Add files via upload
+…
+Latest commit 6c97e3e 3 weeks ago
+ History
+ 1 contributor
+221 lines (198 sloc)  7.11 KB
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .internalrow {
+        
+            padding: 2px 2px;
+            margin: 2px 2px;
+            text-align: center;
+            margin-left: 10px;
+
+        }
+
+        .internaltable .internalrow {
+            display: block;
+            align-items: center;
+            justify-content: center;
+            margin: 2px 2px;
+            text-align: center;
+            margin-left: 45px;
+        }
+
+        .reses {
+            width: 70px;
+        }
+
+        #tab {
+            background: rgb(0, 0, 0);
+            color: white;
+
+        }
+
+        #tab tr th {
+            padding: 4px 4px;
+            text-align: center;
+
+        }
+
+        #tab tr td {
+            padding: 4px 4px;
+            text-align: center;
+
+        }
+
+        .head {
+            width: 120px;
+        }
+        #days{
+            width: 70px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table border cellpadding="4px" cellspacing="4px" id="tab">
+        <thead>
+            <tr>
+                <th colspan="10">TIME TABLE <br>
+                    DATTA MEGHE COLLEGE OF ENGINEERING</th>
+
+            </tr>
+            <tr>
+                <th id="days">Days</th>
+                <th class="head">1 <br> 9.00-10.00</th>
+                <th class="head">2 <br> 10.00-11.00</th>
+                <th class="head">3 <br> 11.00-12.00</th>
+                <th class="head">4 <br> 12.00-1.00</th>
+                <th class="head">5 <br> 1.00-1.45</th>
+                <th class="head">6 <br> 1.45-2.45</th>
+                <th class="head">7 <br> 2.45-3.45</th>
+                <th class="head">8 <br> 3.45-4.45</th>
+                <th class="head">9 <br> 5.45-5.45</th>
+
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>MON</td>
+                <td></td>
+                <td>DBMS <br> 605</td>
+                <td colspan="2" >
+                    <table class="internaltable">
+                        <tr>
+                            <td class="internalrow">SBLC-LAB | A1 | 508</td>
+                        </tr>
+                        <tr>
+                            <td class="internalrow"> MP-LAB | A2 | 503</td>
+                        </tr>
+                        <tr>
+                            <td class="internalrow"> AOA-LAB | A3 | 603</td>
+                        </tr>
+                        <tr>
+                            <td class="internalrow"> DBMS-LAB | A4 | 607</td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="reses"></td>
+                <td>AOA <br> 505</td>
+                <td>MATH-IV <br> 505</td>
+                <td>OS <br> 505</td>
+                <td>MATHS-IV | TUT | A4 <br> 505</td>
+
+            </tr>
+            <tr>
+                <td>TUES</td>
+                <td colspan="2">MPL-LAB <br> A1/A2/A3/A4 <br> 607/508/503/501
+                </td>
+                <td colspan="2">MPL-LAB <br> A1/A2/A3/A4 <br> 607/508/503/501
+                </td>
+                <td class="reses"></td>
+                <td>AOA <br> 505</td>
+                <td>MP <br> 505</td>
+                <td>MATH-IV <br> 505</td>
+                <td>OS <br> 505</td>
+
+            </tr>
+            <tr>
+                <td>WED</td>
+                <td colspan="2">
+                    <table class="internaltable">
+                        <tr>
+                            <td class="internalrow"> SBLC-LAB | A2 | 508</td>
+                        </tr>
+                        <tr>
+                            <td class="internalrow">MP-LAB | A3 | 503</td>
+                        </tr>
+                        <tr>
+                            <td class="internalrow"> AOA-LAB | A4| 603</td>
+                        </tr>
+                        <tr>
+                            <td class="internalrow"> OS-LAB | A1| 607</td>
+                        </tr>
+                    </table>
+                </td>
+                <td colspan="2">
+                    <table class="internaltable">
+                        <tr>
+                            <td class="internalrow"> MP-LAB | A1 | 503</td>
+                        </tr>
+                        <tr>
+                            <td class="internalrow"> AOA-LAB | A2 | 603</td>
+                        </tr>
+                        <tr>
+                            <td class="internalrow"> DBMS-LAB | A3 | 607</td>
+                        </tr>
+                        <tr>
+                            <td class="internalrow"> OS-LAB | A4 | 503</td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="reces">RECESS</td>
+                <td>SBLC<br> 505</td>
+                <td>DBMS <br> 505</td>
+                <td>OS <br> 505</td>
+                <td>MP <br> 505</td>
+            </tr>
+
+            <tr>
+                <td>THU</td>
+                <td colspan="2">
+                    <table class="internaltable">
+                        <tr>
+                            <td class="internalrow"> SBLC-LAB | A3 | 508</td>
+                        </tr>
+                        <tr>
+                            <td class="internalrow">MP-LAB | A4 | 503</td>
+                        </tr>
+                        <tr>
+                            <td class="internalrow"> DBMS-LAB | A1| 607</td>
+                        </tr>
+                        <tr>
+                            <td class="internalrow"> OS-LAB | A2| 603</td>
+                        </tr>
+                    </table>
+                </td>
+                <td colspan="2">
+                    <table class="internaltable">
+                        <tr>
+                            <td class="internalrow"> AOA-LAB | A1 | 603</td>
+                        </tr>
+                        <tr>
+                            <td class="internalrow"> DBMS-LAB | A2 | 607</td>
+                        </tr>
+                        <tr>
+                            <td class="internalrow"> OS-LAB | A3 | 503</td>
+                        </tr>
+                        <tr>
+                            <td class="internalrow"> SBLC-LAB | A4 | 508</td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="reces"></td>
+                <td>SBLC<br> 505</td>
+                <td>DBMS <br> 505</td>
+                <td>MATHS-IV | TUT | A1 <br> 505</td>
+            </tr>
+            <tr>
+                <td>FRI</td>
+                <td></td>
+                <td></td>
+                <td>MATHS-IV | TUT | A2 <br> 505</td>
+                <td>MP <br> 505</td>
+                <td class="reces"></td>
+                <td>AOA <br> 505</td>
+                <td>MATH-IV <br> 505</td>
+                <td>MATHS-IV | TUT | A3 <br> 505</td>
+
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+#navbar{
+    flex-direction: column;
+    margin-top: 50px;
+
+}
+
+#home{
+    height: 241px;
+    padding: 13px 196px;
+   
+
+}
+#home h1{
+    margin-top: 366px;
+    font-size: 44px;
+}
+#home::before{
+    height: 650px;
+
+   
+
+}
+#home p{
+    font-size: 13PX;
+}
+
+#services{
+    flex-direction: column;
+
+}
+
+#services .box{
+
+}
+#client-section{
+   
+}
+#clients{
+   
+}
+#contact-box{
+    flex-direction: column;
+    margin-right: 35px;
+}

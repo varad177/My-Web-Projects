@@ -1,0 +1,46 @@
+doctype html
+html
+  head
+    title varad dance academy
+    style
+        include ../static/style.css
+  body
+    nav#navbar 
+     ul
+        div#logo
+           img(src="static/img/bg1.png", alt="")
+          
+        li #[a(href="/") home]
+        li #[a(href="/") about]
+        li #[a(href="/") services]
+        li #[a(href="/") class info]
+        li #[a(href="/") contact us]
+
+    section#introsection
+     div Welcome To Varad Dance Academy 
+     div.small EAT-DANCE-SLEEP-REPEAT
+    
+    section#missionrsection
+     h2 our mission 
+       
+     div.card#card1
+        
+     div.card#card2
+     
+     div.card#card3
+     
+    section#sponcersection
+     h2 Our Sponcers 
+     div#sponcer 
+        div.sponcers 
+          img(src="../static/img/logo1.png", alt="")
+        div.sponcers 
+          img(src="../static/img/logo2.jpg", alt="")
+        div.sponcers 
+          img(src="../static/img/logo3.jpg", alt="")
+    footer#footer   
+     | Copyright varaddanceacademy all rights are reverse
+
+
+    script
+      include ../static/script.js

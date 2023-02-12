@@ -1,0 +1,163 @@
+* {
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+
+section::before {
+    content: " ";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #edf1fd;
+
+    z-index: -1;
+
+
+}
+
+body {
+
+    background-color: #edf1fd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none
+}
+
+nav {
+    padding: 20px 10%;
+    background-color: #d8e1fc;
+    height: 10vh;
+    border-bottom: #3b855b solid 2px;
+}
+
+nav ul li img {
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 5%;
+    font-weight: 700;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 10px;
+    margin: 5% 5%;
+    gap: 35%;
+}
+
+
+main img {
+    height: 200px;
+    width: 200px;
+
+    border-radius: 20px;
+}
+
+.down img {
+
+    width: 300px;
+}
+
+.left {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+
+}
+
+.left h1 {
+    font-size: 60px;
+}
+
+.left p {}
+
+.left button {
+    padding: 15px;
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+    border: none;
+    background-color: #3b855b;
+    border-radius: 10px;
+}
+
+.right {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.up {
+    display: flex;
+    gap: 15px;
+}
+
+@media (max-width:800px) {
+    main {
+        flex-direction: column;
+        height: 69vh;
+        gap: 35px;
+    }
+
+
+    nav ul li {
+        font-size: 16px;
+    }
+
+    .left {
+        width: 90%;
+        height: 43vh;
+
+    }
+
+    .left h1 {
+        margin-top: 3px;
+    }
+
+    .left p {
+        margin-top: 30px;
+    }
+
+    .right {
+        flex-direction: column;
+        height: 27vh;
+
+    }
+
+    .right img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .down {
+        flex-direction: column;
+    }
+}

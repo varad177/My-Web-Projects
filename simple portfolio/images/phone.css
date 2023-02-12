@@ -1,0 +1,28 @@
+* {
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.main{
+ 
+    flex-direction: column-reverse;
+
+}
+
+.right img{
+    height: 218px;
+    width: 234px;
+    border-radius: 30%;
+
+}
+
+.searchbox {
+    /* display: flex;
+    gap: 30px; */
+    display: none;
+}
