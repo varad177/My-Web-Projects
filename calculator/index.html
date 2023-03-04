@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator by varad</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+   
+</head>
+
+<body>
+    <div id="main">
+        <form name="calc">
+            <input type="text" name="a" id="textbox" placeholder="0"> <br>
+            <input type="button" value="1" onclick="calc.a.value+=1">
+            <input type="button" value="2" onclick="calc.a.value+=2">
+            <input type="button" value="3" onclick="calc.a.value+=2">
+            <input type="button" value="+" onclick="add()">
+            <br>
+            <input type="button" value="4" onclick="calc.a.value+=4">
+            <input type="button" value="5" onclick="calc.a.value+=5">
+            <input type="button" value="6" onclick="calc.a.value+=6">
+            <input type="button" value="-" onclick="sub()">
+            <br>
+            <input type="button" value="7" onclick="calc.a.value+=7">
+            <input type="button" value="8" onclick="calc.a.value+=8">
+            <input type="button" value="9" onclick="calc.a.value+=9">
+            <input type="button" value="/" onclick="div()">
+            <br>
+            <input type="button" value="c" onclick="calc.a.value=''">
+            <input type="button" value="0" onclick="calc.a.value+=0">
+            <input type="button" value="=" onclick="calc.a.value=eval(calc.a.value)">
+            <input type="button" value="x" onclick="mul()">
+
+            <p>Calculator By Varad</p>
+
+
+        </form>
+
+    </div>
+   
+</body>
+
+</html>
