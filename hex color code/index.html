@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hex  color </title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 60px;
+        }
+
+        #btn {
+            padding: 16px;
+            font-size: 20px;
+            border-radius: 26px;
+            background-color: grey;
+            color: white;
+            cursor: pointer;
+        }
+
+        #hex {
+            height: 50px;
+            /* border: 2px solid red; */
+            width: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.4rem;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h2 id="hex">
+
+    </h2>
+    <button id="btn">press me to change </button>
+
+
+    <script>
+        const btn = document.getElementById("btn");
+        const randomcolor = () => {
+            let val = "0123456789ABCDEF";
+            let cons = "#";
+
+            for (let i = 0; i < 6; i++) {
+                cons = cons + val[Math.floor(Math.random() * 16)];
+            }
+            return cons;
+
+        };
+
+        
+
+
+        // console.log(randomcolor());
+        function changerandomcolor() {
+            document.getElementById("hex").innerText = randomcolor();
+            document.body.style.backgroundColor = randomcolor();
+        }
+
+        btn.addEventListener("click", changerandomcolor);
+    </script>
+</body>
+
+</html>
